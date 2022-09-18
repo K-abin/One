@@ -90,7 +90,7 @@ public class Hr implements UserDetails {
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
-
+    @Override
     public String getUsername() {
         return username;
     }
@@ -123,7 +123,7 @@ public class Hr implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
     }
-
+    @Override
     public String getPassword() {
         return password;
     }
